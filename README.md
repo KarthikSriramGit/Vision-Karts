@@ -1,12 +1,12 @@
 # Vision Karts
 
-## The Future of Retail, Today
+## The Future of Computer-Vision Retail, Today
 
-Welcome to **Vision Karts** - where cutting-edge computer vision meets seamless shopping experiences. This isn't just another checkout system. This is a complete reimagining of how retail works.
+Welcome to **Vision Karts** - where cutting-edge computer vision meets seamless shopping experiences. This isn't just another checkout system. This is a complete reimagining of how retail works for camera-based, automated checkout in physical stores.
 
 ### What We've Built
 
-Vision Karts is an **automated checkout system** that eliminates queues, reduces wait times, and transforms the shopping experience. Using state-of-the-art YOLO11 object detection and advanced face recognition, we've created a system that:
+Vision Karts is an **automated checkout system for retail stores** that eliminates queues, reduces wait times, and transforms the shopping experience. Using state-of-the-art YOLO11 object detection and advanced face recognition, we've created a system that:
 
 - **Detects products instantly** - No scanning, no waiting, no hassle
 - **Tracks customers seamlessly** - Know who's shopping, personalize the experience
@@ -15,9 +15,9 @@ Vision Karts is an **automated checkout system** that eliminates queues, reduces
 
 ### The Technology Stack
 
-We didn't settle for "good enough." We went with the **best**:
+We didn't settle for "good enough." We went with the **best** tools for real-world, camera-based retail analytics and checkout:
 
-- **YOLO11** - The industry-leading object detection model (Ultralytics)
+- **YOLO11** - Modern object detection model (Ultralytics) for product recognition
 - **Face Recognition** - Modern dlib-based face recognition for customer tracking
 - **AI Acceleration** - TensorRT and ONNX Runtime optimization for sub-millisecond inference
 - **Modular Architecture** - Clean, professional codebase that scales
@@ -35,7 +35,7 @@ python main.py path/to/image.jpg --prices src/prices.csv
 python main.py image.jpg --model models/custom_yolo11.pt --device cuda
 ```
 
-### Architecture
+### Architecture Overview
 
 ```
 vision_karts/
@@ -295,14 +295,16 @@ yolo train data=dataset.yaml model=yolo11n.pt epochs=100
 
 We welcome contributions! This is cutting-edge technology, and we're always looking to push boundaries.
 
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Submit a pull request
+See `CONTRIBUTING.md` for detailed guidelines on how to report issues, propose improvements, and open pull requests.
+
+### Governance and Community
+
+- Project guidelines: `CODE_OF_CONDUCT.md`
+- How to contribute: `CONTRIBUTING.md`
 
 ### License
 
-MIT License - Build something amazing.
+This project is licensed under the MIT License. See `LICENSE` for details.
 
 ### Advanced Features
 

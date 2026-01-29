@@ -6,8 +6,8 @@ This package contains the core functionality for the Vision Karts automated chec
 
 ### Core Modules
 
-- **`product_detector.py`** - YOLO11-based product detection with AI acceleration support
-- **`billing_engine.py`** - Bill calculation and formatting engine
+- **`product_detector.py`** - YOLO11-based product detection with AI acceleration support for retail products
+- **`billing_engine.py`** - Bill calculation and formatting engine for shopping carts
 - **`customer_tracker.py`** - Face recognition and customer tracking
 
 ### Accelerators
@@ -25,18 +25,18 @@ This package contains the core functionality for the Vision Karts automated chec
 from vision_karts.core import ProductDetector, BillingEngine
 from vision_karts.utils import load_image
 
-# Initialize detector
+# Initialize detector for store product recognition
 detector = ProductDetector(use_acceleration=True)
 
 # Detect products
 image = load_image("cart.jpg")
 detections, annotated = detector.detect(image, return_image=True)
 
-# Calculate bill
+# Calculate bill for detected items
 billing = BillingEngine("prices.csv")
 bill = billing.generate_bill(detections)
 ```
 
 ## Requirements
 
-See main `requirements.txt` for dependencies.
+See main `requirements.txt` for dependencies and supported versions.

@@ -1,6 +1,6 @@
 # Image Dataset Preparation Tools
 
-Utilities for preparing image datasets for training computer vision models.
+Utilities for preparing image datasets for training computer vision models, especially product detection datasets for retail shelves and shopping carts.
 
 ## Tools
 
