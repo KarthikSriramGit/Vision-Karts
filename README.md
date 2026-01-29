@@ -1,8 +1,17 @@
 # Vision Karts
 
+[![Python](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org/)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![YOLO](https://img.shields.io/badge/YOLO-11-purple.svg)](https://docs.ultralytics.com/)
+
 ## The Future of Computer-Vision Retail, Today
 
 Welcome to **Vision Karts** - where cutting-edge computer vision meets seamless shopping experiences. This isn't just another checkout system. This is a complete reimagining of how retail works for camera-based, automated checkout in physical stores.
+
+> *"To truly understand a world, you must first see every piece of it clearly."* — Vision (in spirit)
+
+**Target:** Python 3.8+ on Linux, macOS, or Windows, with optional CUDA GPU  
+**Hardware:** Standard RGB cameras (USB/IP) watching entrances, aisles, and exits in brick-and-mortar stores.
 
 ### What We've Built
 
