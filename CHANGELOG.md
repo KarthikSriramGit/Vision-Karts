@@ -31,7 +31,7 @@
 - Old RetinaNet models need to be retrained using YOLOv8
 - Jupyter notebook code should be migrated to use new Python modules
 - Configuration now uses YAML files instead of hardcoded values
-- See `LEGACY.md` for detailed migration guide
+- See documentation in `docs/` for migration guidance
 
 ### Files Changed
 
