@@ -6,7 +6,7 @@ Utilities for preparing image datasets for training computer vision models.
 
 ### VGG to Pascal VOC Converter
 
-Reference files for converting VGG Image Annotator format annotations to Pascal VOC XML format, which is compatible with YOLOv8 training pipelines.
+Reference files for converting VGG Image Annotator format annotations to Pascal VOC XML format, which is compatible with YOLO11 training pipelines.
 
 ### Files
 
@@ -23,7 +23,7 @@ Reference files for converting VGG Image Annotator format annotations to Pascal 
 ## Output Format
 
 The converter generates Pascal VOC XML files compatible with:
-- YOLOv8 training pipelines
+- YOLO11 training pipelines
 - Standard object detection frameworks
 - Vision Karts model training workflows
 

@@ -1,5 +1,33 @@
 # Changelog
 
+## Version 2.1.0 - YOLO11 Upgrade
+
+### Major Changes
+
+#### Model Upgrade
+- **Upgraded from YOLOv8 to YOLO11** - Latest production-ready model from Ultralytics
+- **Higher accuracy**: YOLO11m achieves 51.5% mAP vs YOLOv8m's 50.2%
+- **22% fewer parameters**: More efficient model architecture
+- **Drop-in replacement**: Same Ultralytics API, minimal code changes required
+
+#### Updated Dependencies
+- Bumped `ultralytics>=8.3.0` (YOLO11 requires 8.3+)
+
+### Migration Notes
+
+- Existing YOLOv8 custom models will still work (backward compatible)
+- For best results, retrain custom models using YOLO11 base weights
+- No API changes required in application code
+
+### Files Changed
+
+- Updated `vision_karts/core/product_detector.py` - Changed default model to `yolo11n.pt`
+- Updated `requirements.txt` - Bumped ultralytics version requirement
+- Updated `configs/default_config.yaml` - Added yolo11 model variants
+- Updated documentation throughout to reference YOLO11
+
+---
+
 ## Version 2.0.0 - Complete System Upgrade
 
 ### Major Changes

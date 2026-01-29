@@ -6,7 +6,7 @@ Welcome to **Vision Karts** - where cutting-edge computer vision meets seamless 
 
 ### What We've Built
 
-Vision Karts is an **automated checkout system** that eliminates queues, reduces wait times, and transforms the shopping experience. Using state-of-the-art YOLOv8 object detection and advanced face recognition, we've created a system that:
+Vision Karts is an **automated checkout system** that eliminates queues, reduces wait times, and transforms the shopping experience. Using state-of-the-art YOLO11 object detection and advanced face recognition, we've created a system that:
 
 - **Detects products instantly** - No scanning, no waiting, no hassle
 - **Tracks customers seamlessly** - Know who's shopping, personalize the experience
@@ -17,7 +17,7 @@ Vision Karts is an **automated checkout system** that eliminates queues, reduces
 
 We didn't settle for "good enough." We went with the **best**:
 
-- **YOLOv8** - The industry-leading object detection model (Ultralytics)
+- **YOLO11** - The industry-leading object detection model (Ultralytics)
 - **Face Recognition** - Modern dlib-based face recognition for customer tracking
 - **AI Acceleration** - TensorRT and ONNX Runtime optimization for sub-millisecond inference
 - **Modular Architecture** - Clean, professional codebase that scales
@@ -32,7 +32,7 @@ pip install -r requirements.txt
 python main.py path/to/image.jpg --prices src/prices.csv
 
 # With custom model and acceleration
-python main.py image.jpg --model models/custom_yolov8.pt --device cuda
+python main.py image.jpg --model models/custom_yolo11.pt --device cuda
 ```
 
 ### Architecture
@@ -40,7 +40,7 @@ python main.py image.jpg --model models/custom_yolov8.pt --device cuda
 ```
 vision_karts/
 ├── core/                    # Core functionality
-│   ├── product_detector.py         # YOLOv8-based product detection
+│   ├── product_detector.py         # YOLO11-based product detection
 │   ├── billing_engine.py           # Bill calculation engine
 │   ├── customer_tracker.py         # Face recognition & tracking
 │   ├── video_processor.py          # Real-time video processing
@@ -72,7 +72,7 @@ vision_karts/
 ### Features
 
 #### 🚀 **Lightning-Fast Detection**
-- YOLOv8 with optimized inference
+- YOLO11 with optimized inference
 - Batch processing support
 - Real-time performance with GPU acceleration
 
@@ -105,7 +105,7 @@ Customize everything via `configs/default_config.yaml`:
 ```yaml
 # Model Configuration
 model:
-  type: "yolov8"
+  type: "yolo11"
   confidence_threshold: 0.5
 
 # Acceleration Configuration
@@ -285,10 +285,10 @@ The system works with standard YOLO format datasets. For training custom models:
 
 1. Prepare images with bounding box annotations
 2. Convert to YOLO format (class_id x_center y_center width height)
-3. Train using Ultralytics YOLOv8:
+3. Train using Ultralytics YOLO11:
 
 ```bash
-yolo train data=dataset.yaml model=yolov8n.pt epochs=100
+yolo train data=dataset.yaml model=yolo11n.pt epochs=100
 ```
 
 ### Contributing

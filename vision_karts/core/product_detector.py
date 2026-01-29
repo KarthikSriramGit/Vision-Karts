@@ -1,8 +1,9 @@
 """
-Product Detection Module using YOLOv8
+Product Detection Module using YOLO11
 
 This module provides state-of-the-art product detection capabilities
-using Ultralytics YOLOv8, the industry-leading object detection model.
+using Ultralytics YOLO11, a production-ready, high-accuracy object
+detection model.
 """
 
 import cv2
@@ -16,7 +17,7 @@ try:
     YOLO_AVAILABLE = True
 except ImportError:
     YOLO_AVAILABLE = False
-    logging.warning("YOLOv8 not available. Install with: pip install ultralytics")
+    logging.warning("Ultralytics YOLO not available. Install with: pip install ultralytics")
 
 from ..accelerators import AcceleratorManager
 
@@ -25,7 +26,7 @@ logger = logging.getLogger(__name__)
 
 class ProductDetector:
     """
-    High-performance product detection using YOLOv8.
+    High-performance product detection using YOLO11.
     
     Supports AI acceleration via TensorRT/ONNX Runtime for real-time inference.
     """
@@ -41,27 +42,29 @@ class ProductDetector:
         Initialize the product detector.
         
         Args:
-            model_path: Path to trained YOLOv8 model. If None, uses pretrained COCO weights.
+            model_path: Path to trained YOLO model (e.g. YOLO11). If None,
+                uses pretrained COCO weights.
             confidence_threshold: Minimum confidence score for detections (0.0-1.0)
             use_acceleration: Enable AI acceleration (TensorRT/ONNX Runtime)
             device: Device to use ('auto', 'cpu', 'cuda', '0', '1', etc.)
         """
         if not YOLO_AVAILABLE:
             raise ImportError(
-                "YOLOv8 is required. Install with: pip install ultralytics"
+                "Ultralytics YOLO is required. Install with: pip install ultralytics"
             )
         
         self.confidence_threshold = confidence_threshold
         self.use_acceleration = use_acceleration
         self.device = self._determine_device(device)
         
-        # Initialize YOLOv8 model
+        # Initialize YOLO model
         if model_path and Path(model_path).exists():
             logger.info(f"Loading custom model from {model_path}")
             self.model = YOLO(model_path)
         else:
-            logger.info("Loading YOLOv8 pretrained model (COCO weights)")
-            self.model = YOLO('yolov8n.pt')  # nano for speed, use yolov8m.pt or yolov8l.pt for accuracy
+            logger.info("Loading YOLO11 pretrained model (COCO weights)")
+            # nano for speed, use yolo11m.pt or yolo11l.pt for higher accuracy
+            self.model = YOLO('yolo11n.pt')
         
         # Setup acceleration if enabled
         self.accelerator = None

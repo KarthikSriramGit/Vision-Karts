@@ -9,7 +9,7 @@ Vision Karts is a comprehensive automated checkout system built with modular arc
 ### Core Components
 
 #### Product Detection Layer
-- **ProductDetector**: YOLOv8-based object detection
+- **ProductDetector**: YOLO11-based object detection
 - **FrameProcessor**: Frame-by-frame processing pipeline
 - **VideoProcessor**: Real-time video stream handling
 

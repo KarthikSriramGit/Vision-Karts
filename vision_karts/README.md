@@ -6,7 +6,7 @@ This package contains the core functionality for the Vision Karts automated chec
 
 ### Core Modules
 
-- **`product_detector.py`** - YOLOv8-based product detection with AI acceleration support
+- **`product_detector.py`** - YOLO11-based product detection with AI acceleration support
 - **`billing_engine.py`** - Bill calculation and formatting engine
 - **`customer_tracker.py`** - Face recognition and customer tracking
 

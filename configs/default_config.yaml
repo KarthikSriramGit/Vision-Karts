@@ -2,7 +2,7 @@
 
 # Model Configuration
 model:
-  type: "yolov8"  # yolov8, yolov8n, yolov8s, yolov8m, yolov8l, yolov8x
+  type: "yolo11"  # yolo11, yolo11n, yolo11s, yolo11m, yolo11l, yolo11x
   confidence_threshold: 0.5
   custom_model_path: null  # Path to custom trained model
 

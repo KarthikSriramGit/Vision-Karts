@@ -36,7 +36,7 @@ def main():
         '--model',
         type=str,
         default=None,
-        help='Path to custom YOLOv8 model (optional)'
+        help='Path to custom YOLO11 model (optional)'
     )
     parser.add_argument(
         '--prices',
