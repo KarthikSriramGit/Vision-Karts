@@ -1,0 +1,26 @@
+<annotation>
+	<folder>cheetos</folder>
+	<filename>014.jpg</filename>
+	<path>/Users/thewitking/Documents/dataset/cheetos/014.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>750</width>
+		<height>750</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>cheetos</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>67</xmin>
+			<ymin>25</ymin>
+			<xmax>680</xmax>
+			<ymax>726</ymax>
+		</bndbox>
+	</object>
+</annotation>

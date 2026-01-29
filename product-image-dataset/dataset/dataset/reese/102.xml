@@ -1,0 +1,26 @@
+<annotation>
+	<folder>reese</folder>
+	<filename>102.jpg</filename>
+	<path>/Users/thewitking/Documents/dataset/reese/102.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>500</width>
+		<height>500</height>
+		<depth>3</depth>
+	</size>
+	<segmented>1</segmented>
+	<object>
+		<name>reese</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>8</xmin>
+			<ymin>167</ymin>
+			<xmax>488</xmax>
+			<ymax>498</ymax>
+		</bndbox>
+	</object>
+</annotation>

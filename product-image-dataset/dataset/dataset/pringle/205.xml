@@ -1,0 +1,26 @@
+<annotation>
+	<folder>pringle</folder>
+	<filename>205.jpg</filename>
+	<path>/Users/thewitking/Documents/dataset/pringle/205.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>143</width>
+		<height>350</height>
+		<depth>3</depth>
+	</size>
+	<segmented>2</segmented>
+	<object>
+		<name>pringle</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>9</xmin>
+			<ymin>7</ymin>
+			<xmax>134</xmax>
+			<ymax>348</ymax>
+		</bndbox>
+	</object>
+</annotation>

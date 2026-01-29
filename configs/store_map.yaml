@@ -1,0 +1,71 @@
+# Store Layout Map Configuration
+
+# Store dimensions (meters)
+store_dimensions:
+  width: 30
+  height: 20
+
+# Zones definition
+zones:
+  - name: "Entrance"
+    type: "entrance"
+    bounds: [[0, 0], [5, 10]]
+    cameras: ["0"]
+    description: "Store entrance area"
+  
+  - name: "Aisle 1"
+    type: "aisle"
+    bounds: [[5, 0], [15, 10]]
+    cameras: ["1"]
+    description: "Main shopping aisle"
+  
+  - name: "Aisle 2"
+    type: "aisle"
+    bounds: [[15, 0], [25, 10]]
+    cameras: ["2"]
+    description: "Secondary shopping aisle"
+  
+  - name: "Exit"
+    type: "exit"
+    bounds: [[25, 0], [30, 10]]
+    cameras: ["3"]
+    description: "Store exit area"
+
+# Shelves definition
+shelves:
+  - id: "A1-S1"
+    zone: "Aisle 1"
+    position: [8, 5]
+    products: ["kitkat", "hershey", "reese"]
+  
+  - id: "A1-S2"
+    zone: "Aisle 1"
+    position: [12, 5]
+    products: ["pringle", "maggie", "cheetos"]
+  
+  - id: "A2-S1"
+    zone: "Aisle 2"
+    position: [18, 5]
+    products: ["kitkat", "hershey"]
+
+# Camera positions
+cameras:
+  - id: "0"
+    name: "Entrance Camera"
+    position: [2.5, 5]
+    type: "entrance"
+  
+  - id: "1"
+    name: "Aisle 1 Camera"
+    position: [10, 5]
+    type: "monitoring"
+  
+  - id: "2"
+    name: "Aisle 2 Camera"
+    position: [20, 5]
+    type: "monitoring"
+  
+  - id: "3"
+    name: "Exit Camera"
+    position: [27.5, 5]
+    type: "exit"

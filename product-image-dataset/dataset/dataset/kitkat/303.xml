@@ -1,0 +1,26 @@
+<annotation>
+	<folder>kitkat</folder>
+	<filename>303.jpg</filename>
+	<path>/Users/thewitking/Documents/dataset/kitkat/303.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>220</width>
+		<height>137</height>
+		<depth>3</depth>
+	</size>
+	<segmented>3</segmented>
+	<object>
+		<name>kitkat</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>3</xmin>
+			<ymin>2</ymin>
+			<xmax>220</xmax>
+			<ymax>133</ymax>
+		</bndbox>
+	</object>
+</annotation>

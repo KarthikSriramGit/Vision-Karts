@@ -1,0 +1,26 @@
+<annotation>
+	<folder>maggie</folder>
+	<filename>511.jpg</filename>
+	<path>/Users/thewitking/Documents/dataset/maggie/511.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1166</width>
+		<height>1242</height>
+		<depth>3</depth>
+	</size>
+	<segmented>5</segmented>
+	<object>
+		<name>maggie</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>268</xmin>
+			<ymin>292</ymin>
+			<xmax>984</xmax>
+			<ymax>1178</ymax>
+		</bndbox>
+	</object>
+</annotation>

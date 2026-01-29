@@ -1,0 +1,26 @@
+<annotation>
+	<folder>hershey</folder>
+	<filename>416.jpg</filename>
+	<path>/Users/thewitking/Documents/dataset/hershey/416.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>870</width>
+		<height>565</height>
+		<depth>3</depth>
+	</size>
+	<segmented>4</segmented>
+	<object>
+		<name>hershey</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>121</xmin>
+			<ymin>175</ymin>
+			<xmax>749</xmax>
+			<ymax>396</ymax>
+		</bndbox>
+	</object>
+</annotation>

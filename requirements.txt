@@ -1,0 +1,49 @@
+# Vision Karts - Dependencies
+
+# Core Computer Vision
+ultralytics>=8.0.0  # YOLOv8
+opencv-python>=4.8.0
+numpy>=1.24.0
+Pillow>=10.0.0
+
+# Face Recognition
+face-recognition>=1.3.0
+dlib>=19.24.0
+
+# Data Processing
+pandas>=2.0.0
+
+# AI Acceleration (Optional but Recommended)
+# Uncomment based on your hardware:
+# onnxruntime>=1.15.0  # For ONNX Runtime acceleration
+# onnxruntime-gpu>=1.15.0  # For GPU-accelerated ONNX Runtime
+# tensorrt>=8.6.0  # For NVIDIA TensorRT (requires NVIDIA GPU)
+
+# Deep Learning Frameworks
+torch>=2.0.0  # PyTorch (for CUDA support)
+torchvision>=0.15.0
+
+# Utilities
+pyyaml>=6.0
+
+# Video Processing
+opencv-contrib-python>=4.8.0
+
+# QR Code Support
+pyzbar>=0.1.9
+qrcode>=7.4.2
+Pillow>=10.0.0  # Already included, but required for QR codes
+
+# Database
+sqlalchemy>=2.0.0
+
+# Receipt Generation
+reportlab>=4.0.0
+
+# HTTP Requests (for sensor APIs)
+requests>=2.31.0
+
+# Development (Optional)
+# pytest>=7.4.0
+# black>=23.0.0
+# flake8>=6.0.0

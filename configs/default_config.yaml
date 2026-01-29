@@ -1,0 +1,113 @@
+# Vision Karts - Default Configuration
+
+# Model Configuration
+model:
+  type: "yolov8"  # yolov8, yolov8n, yolov8s, yolov8m, yolov8l, yolov8x
+  confidence_threshold: 0.5
+  custom_model_path: null  # Path to custom trained model
+
+# Acceleration Configuration
+acceleration:
+  enabled: true
+  backend: "auto"  # auto, tensorrt, onnx, cuda, cpu
+  device: "auto"  # auto, cpu, cuda, 0, 1, etc.
+
+# Billing Configuration
+billing:
+  price_file: "src/prices.csv"
+  store_name: "Vision Karts Store"
+  currency: "USD"
+
+# Customer Tracking Configuration
+customer_tracking:
+  enabled: true
+  known_faces_directory: null  # Path to directory with known customer faces
+  recognition_tolerance: 0.6
+
+# Image Processing Configuration
+image_processing:
+  target_size: null  # [width, height] or null for no resizing
+  save_annotated: true
+  output_directory: "outputs"
+
+# Logging Configuration
+logging:
+  level: "INFO"  # DEBUG, INFO, WARNING, ERROR
+  log_file: null  # Path to log file or null for console only
+
+# Video Processing Configuration
+video_processing:
+  enabled: true
+  fps: 30
+  frame_buffer_size: 10
+  cameras:
+    - id: 0
+      name: "Entrance"
+      position: [0, 0]
+      fps: 30
+    - id: 1
+      name: "Aisle 1"
+      position: [10, 5]
+      fps: 30
+
+# Virtual Cart Configuration
+virtual_cart:
+  enabled: true
+  persistence: true
+  timeout_seconds: 300
+
+# QR Authentication Configuration
+qr_auth:
+  enabled: true
+  qr_secret: "change-this-secret-key-in-production"
+  entry_gate_enabled: true
+  token_max_age: 300  # seconds
+
+# Sensor Fusion Configuration
+sensor_fusion:
+  enabled: false  # Requires hardware
+  weight_sensors:
+    - shelf_id: "A1"
+      sensor_id: "sensor_a1"
+      api_endpoint: "http://sensor-api/shelf/A1"
+      simulated: true
+
+# Store Layout Configuration
+store_layout:
+  map_file: "configs/store_map.yaml"
+  zones:
+    - name: "Entrance"
+      type: "entrance"
+      bounds: [[0, 0], [5, 10]]
+      cameras: ["0"]
+    - name: "Checkout"
+      type: "exit"
+      bounds: [[20, 0], [25, 10]]
+      cameras: ["1"]
+
+# Analytics Configuration
+analytics:
+  enabled: true
+  dashboard_port: 8080
+  metrics_retention_days: 30
+  report_output_dir: "outputs/reports"
+
+# Session Management Configuration
+session_management:
+  enabled: true
+  session_timeout: 3600  # seconds (1 hour)
+  max_concurrent_sessions: 1000
+
+# Database Configuration
+database:
+  enabled: true
+  db_path: "data/vision_karts.db"
+  type: "sqlite"  # sqlite, postgresql, mysql
+
+# Receipt Configuration
+receipt:
+  enabled: true
+  output_dir: "outputs/receipts"
+  format: "pdf"  # pdf, text, json
+  email_enabled: false
+  sms_enabled: false
